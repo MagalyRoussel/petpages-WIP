@@ -1,0 +1,409 @@
+<html> <!-- NEOPETS CODING PAGE-->
+<head>
+<meta name="Robots" content="all">
+<meta name="Description" content="NeoPets.Com - Virtual Pet Community!  Join up for fun, games, shops, auctions, chat and more!">
+<meta name="Keywords" content="pets, pet, games, game, virtual, chat, fun, creatures, prizes, play, tamagotchi, virtual pet, pokemon, kids">
+<title>
+z1llow got their homepage at Neopets.com
+</title>
+
+<script language='javascript'>
+  if (top.location != location) {
+    top.location.href = document.location.href ;
+  }
+</script>
+
+</head>
+<body marginwidth=0 marginheight=0 topmargin=0 leftmargin=0>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" vspace="0" hspace="0" bgcolor="dddd77">
+<tr><td align=center><a href='http://www.neopets.com/refer.phtml?username=noudo_testoun'>
+<img src='http://images.neopets.com/images/homepage_banner.gif' height=14 width=602 border=0></a><br>
+</td></tr></table>
+
+<!-- PETPAGE CODING AREA -->
+
+<style>
+Table, .sf {
+	display: none;
+}
+a {
+	text-decoration: none;
+}
+body {
+	font: 12px Verdana;
+	line-height: 20px;
+	color: #666;
+	background: #fdfdfd url("http://i.imgur.com/J8nKYkY.png");
+}
+#headerimg {
+	margin-top: 50px;
+	width: 1000px;
+	height: 200px;
+	border-bottom: 20px solid #fdfdfd;
+}
+#title {
+	width: 1000px;
+	height: 150px;
+	margin: 0px auto 20px auto;
+}
+#icon {
+	width: 100px;
+	height: 100px;
+	border-style: solid;
+	border-color: #fdfdfd;
+	border-width: 25px 15px 25px 25px;
+	float: left;
+}
+#intro {
+	width: 565px;
+	height: 100px;
+	background: #fdfdfd;
+	margin: 0;
+	float: left;
+	border-style: solid;
+	border-color: #fdfdfd;
+	border-width: 25px 25px 25px 0px;
+	text-align: justify;
+	overflow: auto;
+}
+.clear {
+	clear: both;
+}
+H1 {
+	font: bold 16px Trebuchet MS;
+	line-height: 20px;
+	margin: 0 0 5px 0;
+	border-left: 15px solid #990f94;
+	padding-left: 10px;
+	color: #990f94;
+}
+#linkicon {
+	width: 260px;
+	height: 150px;
+	float: left;
+	background: #fdfdfd;
+	margin: 0 0 0 10px;
+}
+#linkicon span {
+	height: 72px;
+	width: 260px;
+	display: block;
+	margin: 3px 0 0 0;
+}
+#linkicon img {
+	margin: 19px;
+	border: 1px solid #fdfdfd;
+}
+#linkicon span a img {
+	height: 32px;
+	width: auto;
+}
+textarea {
+	width: 130px;
+	height: 72px;
+	border-width: 0 0 0 2px;
+	border-left: 2px dashed #999;
+	margin: 0;
+	padding: 5px;
+	overflow: hidden;
+	font: 11px Courier New;
+	line-height: 12px;
+	color: #888;
+}
+textarea:hover {
+	background: #a43ea8;
+	border-color: #fdfdfd;
+	color: #fdfdfd;
+}
+#menu {
+	width: 980px;
+	height: 10px;
+	background: #fdfdfd;
+	padding: 10px;
+	margin-bottom: 100px;
+}
+#menu li {
+	width: 120px;
+	height: 50px;
+	background: #fdfdfd;
+	display: inline-block;
+	margin: 0 15px;
+}
+#menu li img {
+	width: 100px;
+	height: 30px;
+	margin: 10px;
+}
+.smenu {
+	width: 100px;
+	height: auto;
+	background: #fdfdfd;
+	display: none;
+	margin-top: -10px;
+	border: 10px solid #fdfdfd;
+}
+#menu li:hover .smenu {
+	display: block;
+}
+.smenu a {
+	text-align: center;
+	display: block;
+	padding: 5px 10px;
+	margin: 0;
+	width: 80px;
+	line-height: 20px;
+	color: #ccc;
+}
+.smenu a:hover {
+	color: #fdfdfd;
+	background: #ddd;
+}
+#bigbox {
+	width: 1000px;
+	height: auto;
+	text-align: justify;
+}
+#first {
+	background: #fdfdfd;
+	float: left;
+	width: 580px;
+	height: 380px;
+	padding: 10px;
+	border-top: 20px solid #a43ea8;
+	overflow: auto;
+}
+#first img {
+	width: 200px;
+	height: auto;
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid #ddd;
+}
+#update {
+	background: #fdfdfd;
+	width: 340px;
+	height: 160px;
+	padding: 10px;
+	overflow: auto;
+	border: 10px solid #fdfdfd;
+}
+#second {
+	float: right;
+	width: 380px;
+	height: 420px;
+}
+strong {
+	display: block;
+	background: #bee276;
+	line-height: 20px;
+	color: #fdfdfd;
+	padding: 1px 1px 1px 3px;
+	margin: 0 0 3px 0;
+	font: small-caps normal 12px Trebuchet MS;
+}
+#list {
+	background: #fdfdfd url("http://i.imgur.com/0MA4lij.png") no-repeat;
+	width: 190px;
+	height: 180px;
+	padding: 0px 10px 0px 160px;
+	margin: 20px auto;
+	overflow: auto;
+	border: 10px solid #fdfdfd;
+}
+#list a, #thmenu a {
+	display: block;
+	padding: 4px 5px;
+	font: 12px Trebuchet MS;
+	height: 12px;
+	color: #888;
+	border-left: 3px solid #bee276;
+	margin: 1px 0;
+}
+#list a:hover, #thmenu a:hover {
+	border-color: #a43ea8;
+	color: #555;
+}
+#third {
+	width: 960px;
+	height: 500px;
+	background: #fdfdfd;
+	border: 20px solid #fdfdfd;
+	margin-top: 50px;
+	overflow: hidden;
+}
+#thmenu {
+	width: 250px;
+	height: 100%;
+	overflow: auto;
+	float: left;
+}
+#thmenu h1, .page h1 {
+	border-color: #bee276;
+	color: #666;
+}
+#thbox {
+	width: 700px;
+	height: 500px;
+	overflow: hidden;
+	margin: 0 0 100px 0;
+	float: right;
+}
+.page {
+	width: 680px;
+	height: 480px;
+	padding: 10px;
+	overflow: auto;
+}
+.page strong {
+	background: #cdcdcd;
+}
+a {
+	color: #b64eba;
+}
+a:hover {
+	color: #b5db69;
+}
+b {
+	color: #fdfdfd;
+	background: #c37fd1;
+	letter-spacing: 1px;
+	padding: 0 3px;
+}
+i {
+	color: #a3cc51;
+}
+</style><center>
+<div id="headerimg" style="background: url('http://i.imgur.com/zAxLC5a.png'); border-radius: 20px 20px 0px 0px;"></div>
+
+
+
+<div id="title">
+<img src="http://i.imgur.com/nf9eG1j.png" id="icon"><div style="border-radius: 0px 0px 20px 0px;" id="intro">
+<h1>Welcome Friends!</h1>
+<b>Bold</b> <i>italic</i> <a href="/">link</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+</div>
+
+
+
+
+<div id="linkicon" style="border-radius: 0px 0px 20px 20px;">
+
+<span>
+<img src="http://i.imgur.com/k9qKsFN.gif"><p>PLEASE CHANGE THIS P INTO TEXTAREA!</p>
+</span>
+
+<span>
+<a href="/"><img src="http://i.imgur.com/38xDT1k.png"></a>
+<a href="/~suzuzono"><img src="http://i.imgur.com/FRFNbdc.png"></a>
+<a href="/editpage.phtml?pet_name=YOURPETNAMEHERE">
+<img src="http://i.imgur.com/P97QDdD.png"></a>
+</span></div>
+
+
+
+
+</div>
+<br class="clear"><ul id="menu"><li style="border-radius: 0px 0px 10px 10px; position: relative;">
+<img src="http://i.imgur.com/OdipXO6.png"><div class="smenu" style="position: absolute;">
+<a href="/">Link1-1</a>
+<a href="/">Link1-2</a>
+</div>
+</li>
+<li style="border-radius: 0px 0px 10px 10px; position: relative;">
+<img src="http://i.imgur.com/nLtfHAo.png"><div class="smenu" style="position: absolute;">
+<a href="/">Link2-1</a>
+<a href="/">Link2-2</a>
+</div>
+</li>
+<li style="border-radius: 0px 0px 10px 10px; position: relative;">
+<img src="http://i.imgur.com/yllLnm4.png"><div class="smenu" style="position: absolute;">
+<a href="/">Link3-1</a>
+<a href="/">Link3-2</a>
+</div>
+</li>
+<li style="border-radius: 0px 0px 10px 10px; position: relative;">
+<img src="http://i.imgur.com/Eo7MNws.png"><div class="smenu" style="position: absolute;">
+<a href="/">Link4-1</a>
+<a href="/">Link4-2</a>
+</div>
+</li>
+<li style="border-radius: 0px 0px 10px 10px; position: relative;">
+<img src="http://i.imgur.com/m6HP7ag.png"><div class="smenu" style="position: absolute;">
+<a href="/">Link5-1</a>
+<a href="/">Link5-2</a>
+</div>
+</li>
+<li style="border-radius: 0px 0px 10px 10px; position: relative;">
+<img src="http://i.imgur.com/aTCsvAF.png"><div class="smenu" style="position: absolute;">
+<a href="/">Link6-1</a>
+<a href="/">Link6-2</a>
+</div>
+</li>
+
+</ul><div id="bigbox">
+
+<div id="first" style="border-radius: 20px;">
+<h1>Hmm, It's your first big box to write something.</h1>
+<img src="http://i.imgur.com/lUI54jP.png" style="float: right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>
+When you use float codes, don't forget add clear-classed br tag!
+<br class="clear"></div>
+
+
+
+
+<div id="second">
+
+<div id="update" style="border-radius: 20px;">
+<strong>July 7th 2017</strong>Lorem ipsum dolor sit amet<br><br><strong>June 6th 2017</strong>Lorem ipsum dolor sit amet<br><br></div>
+
+
+
+
+<div id="list" style="border-radius: 20px;">
+<strong>My favorite links</strong>
+<a href="/">My Fav 1</a>
+<a href="/">My Fav 2</a>
+<br><strong>Dailies</strong>
+<a href="/">Fruits Slot</a>
+<a href="/">Forgotten Shore</a>
+</div>
+
+
+
+</div>
+<br class="clear"><div id="third" style="border-radius: 20px;">
+
+<div id="thmenu">
+<h1>Story 1</h1>
+<a href="#one">Chapter 1</a>
+<a href="#two">Chapter 2</a>
+</div>
+
+
+
+<div id="thbox">
+
+
+
+<div class="page" id="one">
+<h1>Chapter 1: Twilight</h1>
+<strong>I only meant to stay awhile </strong>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div>
+
+
+<div class="page" id="two">
+<h1>Chapter 2: Mr. Blue Sky</h1>
+<strong>It's a beautiful day</strong>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div>
+
+
+</div>
+
+
+<br class="clear"></div></div></center>
+
+<!-- END OF PETPAGE AREA & CLOSING OF NEOPETS CODING -->
+</body></html>

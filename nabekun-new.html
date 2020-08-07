@@ -1,0 +1,593 @@
+<html> <!-- NEOPETS CODING PAGE-->
+<head>
+<meta name="Robots" content="all">
+<meta name="Description" content="NeoPets.Com - Virtual Pet Community!  Join up for fun, games, shops, auctions, chat and more!">
+<meta name="Keywords" content="pets, pet, games, game, virtual, chat, fun, creatures, prizes, play, tamagotchi, virtual pet, pokemon, kids">
+<title>
+nabekun got their homepage at Neopets.com
+</title>
+
+<script language='javascript'>
+  if (top.location != location) {
+    top.location.href = document.location.href ;
+  }
+</script>
+
+</head>
+<body marginwidth=0 marginheight=0 topmargin=0 leftmargin=0>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" vspace="0" hspace="0" bgcolor="dddd77">
+<tr><td align=center><a href='http://www.neopets.com/refer.phtml?username=noudo_testoun'>
+<img src='http://images.neopets.com/images/homepage_banner.gif' height=14 width=602 border=0></a><br>
+</td></tr></table>
+
+<!-- PETPAGE CODING AREA -->
+
+<style>
+body {
+	margin: 0;
+	margin-top: -17px;
+	background: #EEE;
+}
+.sf {
+	display: none;
+}
+.left {
+	width: 20%;
+	z-index: 1;
+	float: left;
+}
+.leftbg {
+	width: 20%;
+	height: 100%;
+	background: #1D1D1D;
+	top: 0;
+}
+.center {
+	margin-left: 20%;
+	width: 74%;
+	padding: 3%;
+}
+.top {
+	margin-left: 20%;
+	width: 80%;
+	background: #FFF;
+}
+#box {
+	background: #FFF;
+	padding: 10px;
+	margin-top: 30px;
+}
+body, td, div, p {
+	color: #716265;
+}
+a, a b, b {
+	color: #1d1d1d !important;
+	font: 12pt gisha;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+a:hover, a:hover b {
+	color: #777 !important;
+	cursor: sw-resize;
+}
+p {
+	text-align: justify;
+	margin: 15px;
+	font: 10pt tahoma !important;
+	line-height: 25px !important;
+}
+h1 {
+	font: bold 12pt gisha !important;
+	text-decoration: none;
+	color: #111 !important;
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 25px !important;
+	display: inline-block;
+	margin-left: 20px;
+}
+h1 b {
+	font: lighter 9pt gisha !important;
+	display: block;
+	letter-spacing: 1px;
+}
+h2 {
+	background: #1D1D1D;
+	display: block;
+	font: 12pt gisha !important;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	line-height: 80px;
+	text-align: center;
+	color: #FFF !important;
+	padding: 15px;
+	float: right;
+	margin: 0;
+	margin-left: 10px;
+}
+h3 {
+	font: 12pt gisha !important;
+	text-decoration: none;
+	letter-spacing: 4px;
+	color: #111 !important;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 50px !important;
+	display: inline-block;
+}
+h4 {
+	font: 8pt gisha !important;
+	text-decoration: none;
+	display: block;
+	color: #111 !important;
+	text-align: left;
+	line-height: 20px !important;
+	text-transform: capitalize;
+}
+h5 {
+	background: #1D1D1D;
+	display: block;
+	font: 20pt gisha !important;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 80px;
+	text-align: center;
+	color: #FFF !important;
+	padding: 15px;
+	float: left;
+	margin: 15px;
+}
+h5 b {
+	color: #72F3CC !important;
+	margin-left: 10px;
+	font: 20pt gisha !important;
+}
+h6 {
+	background: #FFF;
+	display: block;
+	width: 100px;
+	font: 10pt gisha !important;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 80px;
+	text-align: center;
+	color: #1D1D1D !important;
+	padding: 10px;
+	margin: 0px;
+}
+#links {
+	text-align: center;
+}
+#links i, #links a {
+	margin: 4px;
+	padding: 5px 10px;
+	text-align: left;
+	display: block;
+	color: #C0C0C0 !important;
+	letter-spacing: 2pt;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 45px !important;
+	font: 8pt tahoma;
+	border-bottom: 1px dashed #2E2E2E;
+}
+#links b a {
+	margin: 2px !important;
+	padding: 2px 5px !important;
+	text-align: left;
+	color: #C0C0C0 !important;
+	letter-spacing: 1pt !important;
+	line-height: 22px !important;
+	font: 7pt tahoma;
+	border: none !important;
+	text-indent: 20px;
+}
+#links b a:hover {
+	text-indent: 25px;
+}
+#links a:hover {
+	border-bottom: 1px dashed #C0C0C0;
+}
+.drop {
+	height: 60px;
+	overflow: hidden;
+}
+.drop:hover {
+	height: auto;
+	overflow: auto;
+}
+#topper {
+	width: 100%;
+}
+.round {
+	width: 24%;
+	text-align: center;
+	color: #72F3CC;
+	font: bold 10pt verdana !important;
+	letter-spacing: 0px;
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.round b {
+	color: #000;
+	font: bold 10pt verdana !important;
+}
+.round i {
+	color: #333;
+	font: 7pt tahoma !important;
+}
+.c1 {
+	background: #1D1D1D !important;
+}
+.c1:hover {
+	background: #111 !important;
+}
+.c2 {
+	background: #72F3CC !important;
+}
+.c2:hover {
+	background: #92F5D8 !important;
+}
+.c3 {
+	background: #CC66FF !important;
+}
+.c3:hover {
+	background: #D379FF !important;
+}
+.c4 {
+	background: #993366 !important;
+}
+.c4:hover {
+	background: #B53C78 !important;
+}
+td {
+	vertical-align: top;
+}
+.tiny {
+	width: 29% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+.tiny b {
+	font: bold 10pt tahoma !important;
+	text-transform: uppercase;
+}
+.tiny i {
+	font-style: normal;
+}
+.tiny u {
+	text-decoration: none;
+	color: #111 !important;
+	font: 9pt verdana !important;
+	text-transform: uppercase;
+}
+.achievements {
+	overflow: hidden;
+	height: 35px;
+	width: 120px;
+}
+.achievements:hover {
+	overflow: auto;
+	height: auto;
+	width: auto;
+}
+.achievements:hover h6 {
+	display: none;
+}
+.achievements img {
+	width: 50px;
+	height: 50px;
+}
+.img {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	display: inline-block;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+}
+.pet_cont {
+	width: 24%;
+	margin: 3px;
+	display: inline-block;
+	vertical-align: top;
+	font: 7pt verdana;
+	text-align: justify;
+}
+#pretty:hover {
+	background: url("http://i.imgur.com/DGoL11n.png");
+}
+#pretty {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 10px;
+}
+</style><div class="leftbg" style="position: fixed;"></div>
+
+<div class="left" style="position: fixed;">
+<div id="links">
+<div class="drop">
+<i>my sites</i>
+<b><a href="/~Tines">portfolio</a></b>
+<b><a href="/~Tines">silent serenity</a></b>
+<b><a href="/~Tines">moonbeam</a></b>
+</div>
+
+<div class="drop">
+<i>accounts</i>
+<b><a href="/~Tines">main</a></b>
+<b><a href="/~Tines">side</a></b>
+<b><a href="/~Tines">side</a></b>
+<b><a href="/~Tines">side</a></b>
+<b><a href="/~Tines">side</a></b>
+</div>
+
+<div class="drop">
+<a href="#nogo" id="c1">pets</a>
+<b><a href="/~Tines">pet</a></b>
+<b><a href="/~Tines">pet</a></b>
+<b><a href="/~Tines">pet</a></b>
+<b><a href="/~Tines">pet</a></b>
+</div>
+
+<div class="drop">
+<i>customization</i>
+<b><a href="/~Tines">photo album</a></b>
+<b><a href="/~Tines">closet</a></b>
+<b><a href="/~Tines">wishlist</a></b>
+</div>
+
+
+<a href="/~Tines">Silent Serenity</a>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="top">
+<table id="topper"><tr><td>
+<h5>PORTFOLIO <b>BRIGHT AQUA</b> </h5>
+</td></tr></table></div>
+
+
+
+
+
+
+
+
+<div class="center">
+<div id="box" class="profile">
+
+
+<h1>about me</h1>
+
+<img src="http://images.neopets.com/items/gross_flypie.gif" style="float: left; margin-right: 10px;"><p>
+After only one visit to this age I am already astounded by its variety.
+</p>
+
+<p>
+After only one visit to this age I am already astounded by its variety.
+</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="box">
+
+<h1>short term goals</h1>
+
+<p>I dont have a lot of short term goals because most things I feel like I need to do are much more long term.
+</p>
+
+<p class="tiny">
+<b>1.</b> <i>Always working on completing my current neocash wishlist. This is both a short term and a long term goal because for everything I
+remove I probably add two more. </i>
+</p>
+
+<p class="tiny">
+<b>2.</b> <i>I would like to push myself to make sure I do my dailies including battling everyday because you never know if today will be the day you get the
+goods.</i>
+</p>
+
+<p class="tiny">
+<b>3.</b> <i>Make a list at jellyneo for my spoon gallery. Im looking for any items with spoons or spoons themselves.</i>
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="box">
+
+<h1>long term goals</h1>
+
+<p>After only one visit to this age I am already astounded by its variety.
+</p>
+
+<p class="tiny">
+<img src="http://images.neopets.com/trophies/467_1.gif"><br><b>Userlookup Spotlight</b> Trophy <br><i>Always working on completing my current neocash wishlist. This is both a short term and a long term goal because for everything I
+remove I probably add two more. </i>
+</p>
+
+<p class="tiny">
+<img src="http://images.neopets.com/trophies/101_1.gif"><br><b>Petpage Spotlight</b> Trophy <br><i>Always working on completing my current neocash wishlist. This is both a short term and a long term goal because for everything I
+remove I probably add two more. </i>
+</p>
+
+<p class="tiny">
+<img src="http://images.neopets.com/trophies/109_1.gif"><br><b>Game</b> Trophy <br><i>Always working on completing my current neocash wishlist. This is both a short term and a long term goal because for everything I
+remove I probably add two more. </i>
+</p>
+
+
+<p class="tiny">
+<img src="http://images.neopets.com/neoboards/avatars/jester.gif"><br><b>227/400</b> Avatars <br><i>Always working on completing my current neocash wishlist. This is both a short term and a long term goal because for everything I
+remove I probably add two more. </i>
+</p>
+
+<p class="tiny">
+<img src="http://images.neopets.com/neoboards/avatars/luckyblumaroo.gif"><br><b>227/400</b> Avatars <br><i>Always working on completing my current neocash wishlist. This is both a short term and a long term goal because for everything I
+remove I probably add two more. </i>
+</p>
+
+<p class="tiny">
+<img src="http://images.neopets.com/neoboards/avatars/sitespotlight.gif"><br><b>227/400</b> Avatars <br><i>Always working on completing my current neocash wishlist. This is both a short term and a long term goal because for everything I
+remove I probably add two more. </i>
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div id="box">
+
+<h1>overview</h1>
+
+<br><div class="round">
+<b>12/15</b> Goals <br><i>last completed 7/17/07</i>
+</div>
+
+<div class="round">
+<b>227/400</b> Avatars <br><i>last completed 7/17/07</i>
+</div>
+
+<div class="round">
+<b>27/50</b> Trophies <br><i>last completed 7/17/07</i>
+</div>
+
+<div class="round">
+<b>7/25</b> Pets <br><i>last completed 7/17/07</i>
+</div>
+
+
+
+
+<br><div class="achievements">
+<h6 id="c3">» more</h6>
+
+<div class="round">
+<b>Avatar</b> Carnival of Terror <br><i>achieved 7/17/07</i>
+</div>
+
+<div class="round">
+<b>250th</b> Avatar Goal Crushed <br><i>achieved 7/17/07</i>
+</div>
+
+<div class="round">
+<b>Avatar</b> Carnival of Terror <br><i>achieved 7/17/07</i>
+</div>
+
+<div class="round">
+<b>250th</b> Avatar Goal Crushed <br><i>achieved 7/17/07</i>
+</div>
+
+<div class="round">
+<b>Avatar</b> Carnival of Terror <br><i>achieved 7/17/07</i>
+</div>
+
+<div class="round">
+<b>250th</b> Avatar Goal Crushed <br><i>achieved 7/17/07</i>
+</div>
+
+
+<div class="round">
+<b>Avatar</b> Carnival of Terror <br><i>achieved 7/17/07</i>
+</div>
+
+<div class="round">
+<b>250th</b> Avatar Goal Crushed <br><i>achieved 7/17/07</i>
+</div>
+
+<div class="round">
+<b>Avatar</b> Carnival of Terror <br><i>achieved 7/17/07</i>
+</div>
+
+<div class="round">
+<b>250th</b> Avatar Goal Crushed <br><i>achieved 7/17/07</i>
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="box"><div align="center">
+
+<div class="pet_cont">
+<div class="img" style="background: url('http://pets.neopets.com/cp/697foq8n/1/4.png');">
+<div id="pretty"></div></div>
+</div>
+
+
+<div class="pet_cont">
+<div class="img" style="background: url('http://pets.neopets.com/cp/697foq8n/1/4.png');">
+<div id="pretty"></div></div>
+</div>
+
+
+
+<div class="pet_cont">
+<div class="img" style="background: url('http://pets.neopets.com/cp/697foq8n/1/4.png');">
+<div id="pretty"></div></div>
+</div>
+
+
+
+<div class="pet_cont">
+<div class="img" style="background: url('http://pets.neopets.com/cp/697foq8n/1/4.png');">
+<div id="pretty"></div></div>
+</div>
+
+<p style="text-align: right;">
+<a href="/~Tines"> » proceed to photo album</a>
+</p>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+<!-- END OF PETPAGE AREA & CLOSING OF NEOPETS CODING -->
+</body></html>
