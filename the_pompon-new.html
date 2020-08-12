@@ -23,426 +23,278 @@ the_pompon got their homepage at Neopets.com
 <!-- PETPAGE CODING AREA -->
 
 <style>
-.top {
-	width: 100%;
-	background: #e9f2f7;
-	height: 200px;
-	left: 0;
-	top: 0;
-	z-index: -5;
-}
-.bg {
-	background: url("http://imageshack.com/a/img633/9824/DhE4xU.jpg") fixed 100% 100%;
-	left: 0;
-	top: 40%;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-}
-body {
-	margin: 0;
-	background: #e9f2f7 url("http://imageshack.com/a/img911/9278/XOMqvd.jpg") fixed bottom center;
-}
-h1 {
-	font: 20pt gisha;
-	margin: 0;
-	text-transform: none;
-	color: #ABBAE1 !important;
-	border: 1px solid #ABBAE1;
-	padding: 5px;
-}
-h2 {
-	font: 20pt gisha;
-	margin: 0;
-	text-transform: none;
-	color: #ABBAE1 !important;
-	border: 1px solid #ABBAE1;
-	padding: 5px;
-}
-body, font, td, div, p {
-	font: 11px verdana;
-	color: #555;
-	line-height: 17pt;
-}
-a {
-	font: 11px verdana;
-	text-decoration: none;
-	color: #333;
-	text-transform: uppercase;
-}
-a:hover, a:hover img {
-	text-align: center;
-	cursor: crosshair;
-	color: #ccc;
-}
-b {
-	font-weight: bolder;
-	color: #1d1d1d !important;
-	font: 14px tahoma !important;
-	text-transform: uppercase;
-}
-.credit {
-	font: 10pt gisha;
-	text-transform: none;
-	color: #FFF !important;
-	text-align: left;
-	border: 1px solid #FFF;
-	padding: 5px;
-	text-decoration: none;
-	margin: 10px;
-	float: right;
-	background: url("http://imageshack.com/a/img911/9278/XOMqvd.jpg") fixed;
-}
-.credit:hover {
-	background-position: center;
-}
-.box1 {
-	padding: 30px 0px;
-	width: 900px;
-	margin: 0 auto;
-	margin-top: 70px;
-	background: url("http://imageshack.com/a/img911/9278/XOMqvd.jpg") fixed 100% 30%;
-}
-.box {
-	background: #FFF;
-	padding: 30px;
-}
-.box div {
-	width: 830px !important;
-}
-td {
-	color: #ABBAE1 !important;
-}
-hr, .sf {
+table, .sf {
 	display: none;
 }
-#neo a {
-	width: 300px;
-	height: 300px;
-	overflow: hidden;
-	display: inline-block;
-	border: 1px solid #fff;
-	padding: 9px;
-	margin: 6px;
+div table {
+	display: inline;
 }
-#neo a:hover {
-	width: 298px;
-	height: 298px;
-	padding: 10px;
-	cursor: se-resize !important;
+body {
+	background: #efefef;
+	font: 10pt "tahoma";
+	color: #666;
+	list-style: circle outside;
 }
-#neo img {
-	margin-left: -200px;
-	margin-top: -120px;
-}
-#neo1 a {
-	width: 200px;
-	height: 200px;
-	overflow: hidden;
-	display: inline-block;
-	border: 1px solid #fff;
-	padding: 9px;
-	margin: 6px;
-}
-#neo1 a:hover {
-	width: 198px;
-	height: 198px;
-	padding: 10px;
-	cursor: se-resize !important;
-}
-#neo1 img {
-	margin-left: -50px;
-	margin-top: -56px;
-}
-#little_pet img {
-	padding: 5px;
-	margin: 10px;
-	width: 80px;
-	height: 80px;
-	border: 1px solid #fff;
-}
-#little_pet img:hover {
-	padding: 10px;
-	width: 70px;
-	height: 70px;
-	cursor: nw-resize;
-	border: 1px solid #F7F7F7;
-}
-#petpet img:hover {
-	padding: 10px;
-	width: 70px;
-	height: 70px;
-	cursor: nw-resize;
-	border: 1px solid #F7F7F7;
-}
-#petpet img {
-	padding: 5px;
-	margin: 10px;
-	width: 80px;
-	height: 80px;
-	border: 1px solid #fff;
-}
-#cute img:hover {
-	padding: 10px;
-	width: 70px;
-	height: 70px;
-	cursor: nw-resize;
-	border: 1px solid #F7F7F7;
-}
-#cute img {
-	padding: 5px;
-	margin: 8px;
-	width: 80px;
-	height: 80px;
-	border: 1px solid #fff;
-}
-.tiny img:hover {
-	padding: 10px;
-	width: 70px;
-	height: 70px;
-	cursor: nw-resize;
-	border: 1px solid #F7F7F7;
-}
-.tiny img {
-	padding: 5px;
-	margin: 5px;
-	width: 80px;
-	height: 80px;
-	border: 1px solid #fff;
-}
-.avatar img:hover {
-	padding: 10px;
-	width: 40px;
-	height: 40px;
-	cursor: nw-resize;
-	border: 1px solid #F7F7F7;
-}
-.avatar img {
-	padding: 5px;
-	margin: 5px;
-	width: 50px;
-	height: 50px;
-	border: 1px solid #fff;
-}
-.links {
-	background: url("http://imageshack.com/a/img633/9824/DhE4xU.jpg") fixed 100% 30%;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 62px;
-	z-index: 1;
-	border-bottom: 1px dashed #ABBAE1;
-}
-.links i, .links a, .links b a {
-	margin: 4px;
-	padding: 5px 10px;
-	text-align: right;
+.ca, .c1, .c2, .c3, .c4, .c5, .naviCA, .naviC1, .naviC2, .naviC3, .naviC4, .naviC5 {
+	background: #fff;
 	display: block;
-	color: #fff !important;
-	letter-spacing: 2pt;
-	text-transform: uppercase;
-	line-height: 45px !important;
-	font: 8pt tahoma;
 }
-.links b a {
-	margin: 2px !important;
-	text-align: left;
-	color: #fff !important;
-	letter-spacing: 1pt !important;
-	font: 7pt tahoma;
-	border: none !important;
-	text-indent: 10px;
-	padding: 5px 0 !important;
-	line-height: 22px !important;
+.naviCA, .naviC1, .naviC2, .naviC3, .naviC4, .naviC5 {
+	text-align: right;
+	padding: 8px 20px 5px 2px;
+	margin-bottom: 7px;
 }
-.links b a:hover {
-	color: #eee !important;
-	background: #ABBAE1;
+.ca, .naviCA {
+	border-left: #8551BD solid 10px;
 }
-.drop {
-	height: 60px;
-	overflow: hidden;
-	float: right;
+.c1, .naviC1 {
+	border-left: #9F9FE7 solid 10px;
 }
-.drop:hover {
+.c2, .naviC2 {
+	border-left: #7373C7 solid 10px;
+}
+.c3, .naviC3 {
+	border-left: #7EA7D9 solid 10px;
+}
+.c4, .naviC4 {
+	border-left: #1cbafb solid 10px;
+}
+.c5, .naviC5 {
+	border-left: #01dfd4 solid 10px;
+}
+.c3 i {
+	color: #FF85B5;
+}
+#side a.navi {
+	text-align: right;
+	padding: 8px 20px 5px 2px;
+	margin-bottom: 7px;
+}
+.naviCA:hover, .naviC1:hover, .naviC2:hover, .naviC3:hover, .naviC4:hover, .naviC5:hover {
+	letter-spacing: 1px;
+}
+#side {
+	margin: 20px;
+	height: 95%;
+	width: 185px;
+}
+#sideimage {
+	width: 180px;
 	height: auto;
-	overflow: auto;
-	background: url("http://imageshack.com/a/img911/9278/XOMqvd.jpg") fixed 100% 30%;
-	border-bottom: 1px dashed #fff;
+  border: 2px solid #dadada;
 }
-</style><center>
+#main {
+  margin: 15px;
+	width: 700px;
+  text-align: justify;
+}
+.content {
+  padding: 20px;
+}
+.spacer {
+	height: 40px;
+}
+b {
+	font: 10pt "tahoma";
+	color: #888;
+	text-decoration: none;
+}
+a {
+	font: 10pt "tahoma";
+	color: #8551BD;
+  font-weight: bolder;
+	text-decoration: none;
+}
+a:hover {
+	color: #9F9FE7;
+}
+#side a {
+	font: 10pt "tahoma";
+	color: #888;
+	text-decoration: none;
+}
+#side a:hover {
+	color: #666;
+}
+h1 {
+  font: 50pt "Tahoma";
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 50px 20px 10px 20px;
+}
+h2 {
+	border-bottom: 1px dotted #dadada;
+  width: 60%;
+	margin: auto;
+	padding: 5px;
+	font: 16pt "Tahoma";
+  text-align: center;
+}
+h3 {
+  width: 60%;
+  margin: -30;
+	/*margin-right: -30px;*/
+	padding: 5px;
+  background-color: #dadada;
+	text-indent: 80px;
+	font: 12pt "Tahoma";
+  letter-spacing: 1px;
+	font-weight: bold;
+  border: 2px solid #dadada;
+  /* border-radius: 0 20px 20px 0; */
+}
+h4 {
+	margin: 20px;
+	padding: 5px;
+	text-indent: 30px;
+	font: 12pt "Tahoma";
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #dadada;
+  text-transform: uppercase;
+}
+.box1 {
+  border: 1px solid #dadada;
+  margin: 10px 70px 5px 70px;
+  padding : 20px;
+}
+.box2 {
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  padding: 5px;
+}
+.speechBubble {
+  /* border-radius: 20px; */
+  padding: 10px 25px 10px 25px;
+  margin: 15px;
+  background-color: #9F9FE7;
+  font-size: 12pt "tahoma";
+  font-weight: bold;
+  color: indigo;
+}
+ul.tracking {
+  display: inline;
+  margin:0;
+  padding:0;
+}
+ul.tracking li {
+  list-style: none;
+  font: 10pt "tahoma";
+}
+</style>
+<img src="http://i.imgur.com/yci3ckk.png" style="position: fixed; top: 0; left: 0; height: auto; width: 100%; z-index: -99999;">
+<div id="side" style="position: fixed; top: 0px; left: 0px;">
+<img src="https://i.imgur.com/5zeaLd4.jpg" id="sideimage" style="border-radius: 100px;"><br><br>
+<a href="#t1" class="naviCA" style="border-radius: 15px;">Accueil | Home</a>
+<a href="#t2" class="naviC1" style="border-radius: 15px;">RE:CreAtion</a>
+<a href="#t3" class="naviC2" style="border-radius: 15px;">Page setup</a>
+<a href="#t4" class="naviC3" style="border-radius: 15px;">Autre | Other</a>
+<a href="#t5" class="naviC4" style="border-radius: 15px;">Histoire | Story</a>
+<a href="#t6" class="naviC5" style="border-radius: 15px;">Adoptables</a>
+base from <a href="/~Orgrimmar">OrgCSS</a> by l3lo0!<br>
+background from <a href="/~ventria">Mariposa</a>
+</div>
+<div id="main" style="position: relative; top: 0px; left: 200px;">
+  <h1>NICE TITLE HERE</h1>
+<div id="t1" class="ca">
+<h2>Bienvenue | Welcome</h2>
+<div class="content">
 
 
-<div class="top" style="position: fixed;"></div>
-<div class="bg" style="position: fixed;"></div>
+<p>Normal paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-
-
-<div class="links" style="position: fixed;">
-
-<div class="drop">
-<i>quick links</i>
-<b><a href="/~Tines">silent serenity</a></b>
-<b><a href="#aeveru">aeveru</a></b>
-<b><a href="#contage">contage</a></b>
-<b><a href="#contagion">contagion</a></b>
+</div>
 </div>
 
 
-<div class="drop">
-<i>accounts</i>
-<b><a href="/~Tines">side</a></b>
-<b><a href="/~Tines">side</a></b>
-<b><a href="/~Tines">side</a></b>
-<b><a href="/~Tines">side</a></b>
-</div>
+<div class="spacer"></div>
 
 
-<div class="drop">
-<i>customization</i>
-<b><a href="/~Tines">photo album</a></b>
-<b><a href="/~Tines">closet</a></b>
-<b><a href="/~Tines">wishlist</a></b>
-</div>
+<div id="t2" class="c1">
+<h2>Avancée du challenge | Challenge Tracking</h2>
+<div class="content">
 
-<a href="/~Tines" style="float: left;">My Portfolio</a>
-
-</div>
-
-
-
-<br><div class="box1">
-<div class="box">
-<center>
-
-
-
-<h1>About me</h1>
-
-<div class="about_me" style="width: 800px; text-align: justify;">
-
-<br><br>
-
-You can write what you want here. You can write what you want here.
-You can write what you want here. You can write what you want here.
-You can write what you want here. You can write what you want here.
-You can write what you want here. You can write what you want here.
-
-You can write what you want here. You can write what you want here.
-You can write what you want here. You can write what you want here.
-You can write what you want here. You can write what you want here.
-You can write what you want here. You can write what you want here.
-
-</div>
-
-
-
-
-
-
-
-
-<br><br><div class="boxed">
-
-
-<h1>My Neopets</h1>
-<div id="little_pet"><img src="http://images.neopets.com/items/pot_cybunny_cloud.gif"></div>
-<a href="/~petpagenamehere">View my photo album</a>
-<br><br><div id="neo1">
-
-<a href="/petlookup.phtml?pet=hidd" style="border-radius: 300em;">
-<img src="http://pets.neopets.com/cp/s2sfo5gd/1/4.png"></a>
-
-<a href="/petlookup.phtml?pet=meby" style="border-radius: 300em;">
-<img src="http://pets.neopets.com/cp/ddnvsgzm/1/4.png"></a>
-
-<a href="/petlookup.phtml?pet=tines" style="border-radius: 300em;">
-<img src="http://pets.neopets.com/cp/knb4fhdc/1/4.png"></a>
-
-<a href="/petlookup.phtml?pet=yubo" style="border-radius: 300em;">
-<img src="http://pets.neopets.com/cp/7rsr5bdk/1/4.png"></a>
-
-<a href="/petlookup.phtml?pet=hidd" style="border-radius: 300em;">
-<img src="http://pets.neopets.com/cp/ntkswgfl/1/4.png"></a>
-
-<a href="/petlookup.phtml?pet=meby" style="border-radius: 300em;">
-<img src="http://pets.neopets.com/cp/ho6x99kx/1/4.png"></a>
+  <p>Normal paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 </div>
 </div>
 
 
+<div class="spacer"></div>
 
 
+<div id="t3" class="c2">
+<h2>Page setup and text formating</h2>
+<div class="content">
+text <b>bold</b> <i>italics</i> <a href="#">links</a>
+<p class="box1" style="border-radius:7px;">Paragraph in box1 style. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<br><br><br>
+<h3 style="border-radius: 0 20px 20px 0;">Header3 will go here</h3>
+<h4>header 4 -translation-</h4>
 
-<br><br><h1>Petpets & Petpetpets Goals</h1><br><div class="boxed">
+<p class="box2">Paragrahp in box2 style. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<div id="petpet">
+<div style="margin: auto; width: 400px; padding: 10px; background: #ffffff; border: 1px dotted #dadada;">
+  <img src="http://pets.neopets.com/cpn/Mariquita/1/2.png" style="float: left; margin-right: 10px;">
+  <b>Name:</b> Mariquita <br><b>Nickname:</b> Mari <br><b>Gender:</b> Female <br><b>Species:</b> Pteri <br><b>Brush:</b> Yellow <br><br> This other box is from <a href="/~Mariquita">Mariquita</a>
+  <div style="clear: both;"></div>
+</div>
 
-<img src="http://images.neopets.com/items/whoot_halloween.gif"><img src="http://images.neopets.com/items/petpetpet_aboogala.gif"><img src="http://images.neopets.com/items/kookith_plushie.gif"><img src="http://images.neopets.com/items/ppp_rayneblug.gif"><img src="http://images.neopets.com/items/gobbler_rainbow.gif"><img src="http://images.neopets.com/items/ppp_petpetpet3.gif"><img src="http://images.neopets.com/items/whoot_halloween.gif"><img src="http://images.neopets.com/items/petpetpet_aboogala.gif"><img src="http://images.neopets.com/items/kookith_plushie.gif"><img src="http://images.neopets.com/items/ppp_rayneblug.gif"><img src="http://images.neopets.com/items/gobbler_rainbow.gif"><img src="http://images.neopets.com/items/ppp_petpetpet3.gif"><img src="http://images.neopets.com/items/whoot_halloween.gif"><img src="http://images.neopets.com/items/petpetpet_aboogala.gif"><img src="http://images.neopets.com/items/whoot_halloween.gif"><img src="http://images.neopets.com/items/petpetpet_aboogala.gif"></div>
+<p>Normal paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<br><br><br>
+<h3 style="border-radius: 0 20px 20px 0;">Header3 will go here</h3>
+<h4>header 4 -translation-</h4>
+
+<img src="http://images.neopets.com/template_images/xweetok_face_wink.gif" alt="Winking cloud xweetok" style="float: right;">
+
+<p class="speechBubble" style="margin-right: 140px;border-radius: 20px; ">Very big bubble of speech here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p class="speechBubble" style="margin-right: 250px;border-radius: 20px; ">Speech bubble text here.</p>
+</div>
 </div>
 
 
+<div class="spacer"></div>
 
-
-
-
-<br><br><div class="boxed">
-
-<h1>My Favorites</h1>
-<div id="little_pet"><img src="http://images.neopets.com/items/pot_cybunny_cloud.gif"></div>
-<a href="http://www.neopets.com/ncma/index.phtml?user=yourusernamehere">View my nc album</a>
-<br><br><p id="cute" style="text-align: center;">
-<img src="http://images.neopets.com/items/mall_appetising_caraapple.gif"><img src="http://images.neopets.com/items/mall_wings_gingerbread.gif"><img src="http://images.neopets.com/items/mall_stringlights_icecream.gif"><img src="http://images.neopets.com/items/mall_designer_trickbag.gif"><img src="http://images.neopets.com/items/mall_bg_tricktreatdoor.gif"><img src="http://images.neopets.com/items/mall_sparklingrainbow.gif"><img src="http://images.neopets.com/items/mall_skeletal_facepaint.gif"><img src="http://images.neopets.com/items/mall_mme2s1_grant.gif"><img src="http://images.neopets.com/items/mall_shower_halloweencandy.gif"><img src="http://images.neopets.com/items/mall_gingerbread_bk.gif"><img src="http://images.neopets.com/items/mall_contacts_pink.gif"><img src="http://images.neopets.com/items/mall_acnc_acwig.gif"><img src="http://images.neopets.com/items/mall_jjpb_cloudfg.gif"><img src="http://images.neopets.com/items/gif_old_cobwebs.gif"><img src="http://images.neopets.com/items/mall_bg_colorfulstairs.gif"><img src="http://images.neopets.com/items/mall_gar_springspyder.gif"><img src="http://images.neopets.com/items/mall_trink_neopet_bottle.gif"><img src="http://images.neopets.com/items/mall_wig_meridell.gif"><img src="http://images.neopets.com/items/mall_acc_plaidscarf.gif"><img src="http://images.neopets.com/items/mall_clo_strawberrysweater.gif"><img src="http://images.neopets.com/items/mall_acc_gothicfp.gif"><img src="http://images.neopets.com/items/mall_dd2011_myncicontacts.gif"><img src="http://images.neopets.com/items/mall_acc_lennyswand.gif"><img src="http://images.neopets.com/items/mall_acc_greencontacts.gif"><img src="http://images.neopets.com/items/mall_shower_rainbowbutterfly.gif"><img src="http://images.neopets.com/items/mall_clo_tulle_yarn_tutu.gif"><img src="http://images.neopets.com/items/mall_clo_heart_buttons_shirt.gif"></p>
+<div id="t4" class="c3">
+<h2>Autre | Other</h2>
+<div class="content">
+text
 </div>
-<br><center>
-<br><br><h2>Site Accomplishments</h2>
-<div id="little_pet"><img src="http://images.neopets.com/items/pot_cybunny_cloud.gif"></div>
-<a href="/userlookup.phtml?user=usernamehere#usertrophies">View my trophies</a>
+</div>
 
-<div class="tiny" style="background: #fff; border: 1px solid #fff; padding: 5px;">
-<img src="http://images.neopets.com/trophies/348_1.gif"><img src="http://images.neopets.com/games/kadoatery/trophy1.gif"><img src="http://images.neopets.com/trophies/467_1.gif"><img src="http://images.neopets.com/altador/altadorcup/2014/trophies/faerieland_1.gif"><img src="http://images.neopets.com/trophies/101_1.gif"><img src="http://images.neopets.com/trophies/734_1.gif"></div>
+<div class="spacer"></div>
 
-
-
-
-<br><br><h2>Avatar Accomplishments</h2> <b>Current</b> 200
-<div class="avatar" style="background: #fff; border: 1px solid #fff; padding: 5px;">
-<img src="http://images.neopets.com/neoboards/avatars/kadoatery.gif"><img src="http://images.neopets.com/neoboards/avatars/magax.gif"><img src="http://images.neopets.com/neoboards/avatars/typingterror.gif"><img src="http://images.neopets.com/neoboards/avatars/mutantgravedoom.gif"><img src="http://images.neopets.com/neoboards/avatars/meowclops_close.gif"><img src="http://images.neopets.com/neoboards/avatars/deadlydice.gif"><img src="http://images.neopets.com/neoboards/avatars/betterthanyou.gif"><img src="http://images.neopets.com/neoboards/avatars/spacerocked.gif"><img src="http://images.neopets.com/neoboards/avatars/florg.gif"><img src="http://images.neopets.com/neoboards/avatars/petpetrescue.gif"><img src="http://images.neopets.com/neoboards/avatars/destructomatch2.gif"><img src="http://images.neopets.com/neoboards/avatars/snowmuncher.gif"></div>
-
-
-
-
-
-
-<br><br><h2>Site Goals</h2> <b>Current</b> 5/10
- <div class="tiny" style="background: #fff; border: 1px solid #fff; padding: 5px;">
-<img src="http://images.neopets.com/items/mall_spyderweb_staff.gif"><img src="http://images.neopets.com/items/mall_bgitem_groundfountain.gif"><img src="http://images.neopets.com/items/mall_foreground_bakery.gif"><img src="http://images.neopets.com/items/mall_wig_lulu2010.gif"><img src="http://images.neopets.com/items/mall_spellfireworks.gif"><img src="http://images.neopets.com/games/pages/trophies/1347_1.png"><img src="http://images.neopets.com/games/pages/trophies/536_1.png"><img src="http://images.neopets.com/trophies/372_3.gif"></div>
-
-
-
-
- <br><br><h2>Avatar Goals</h2> <b>Current</b> 5/10
- <div class="avatar" style="background: #fff; border: 1px solid #fff; padding: 5px;">
-<img src="http://images.neopets.com/neoboards/avatars/ahhhhmeepit.gif"><img src="http://images.neopets.com/neoboards/avatars/devilpuss.gif"><img src="http://images.neopets.com/neoboards/avatars/techobuzz.gif"><img src="http://images.neopets.com/neoboards/avatars/carnival_terror.gif"><img src="http://images.neopets.com/neoboards/avatars/snowroller.gif"><img src="http://images.neopets.com/neoboards/avatars/sitespotlight.gif"><img src="http://images.neopets.com/neoboards/avatars/turmaculus.gif"></div>
-
-
-
-
-
-</center>
-</center></div>
+<div id="t5" class="c4">
+<h2>Histoire | Story</h2>
+<div class="content">
+text
+</div>
 </div>
 
 
+<div class="spacer"></div>
 
 
+<div id="t6" class="c5">
+<h2>Adoptables</h2>
+<div class="content">
+text
+</div>
+</div>
 
-<br><br><a href="/~Tines" class="credit">SILENT SERENITY</a>
 
+<div class="spacer"></div>
 
-
-</center>
+</div>
 
 <!-- END OF PETPAGE AREA & CLOSING OF NEOPETS CODING -->
 </body></html>
