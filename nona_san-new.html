@@ -162,6 +162,17 @@ h4 {
   border-bottom: 1px solid #dadada;
   padding: 5px;
 }
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background-color: #dadada;
+}
+/* Gradient transparent - color - transparent FROM CSS TRICKS */
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 .speechBubble {
   /* border-radius: 20px; */
   padding: 10px 25px 10px 25px;
@@ -180,16 +191,43 @@ ul.tracking li {
   list-style: none;
   font: 10pt "tahoma";
 }
+.pet {
+  display: inline-block;
+  border: 3px #ddd solid;
+  margin: 0px auto;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.pet img {
+  border: 0px orange solid;
+}
+.pet span {
+  display: none;
+  background: url("http://i.imgur.com/Jjk8AIa.png");
+  color: #fff;
+  height: 150px;
+  top: 0;
+  left: 0;
+  width: 130px;
+  padding: 10px;
+  font: 10pt Trebuchet Ms;
+  line-height: 20px;
+  text-align: center;
+}
+.pet:hover span {
+  display: block;
+}
 </style>
 <img src="http://i.imgur.com/0pruECM.png" style="position: fixed; top: 0; left: 0; height: auto; width: 100%; z-index: -99999;">
 <div id="side" style="position: fixed; top: 0px; left: 0px;">
 <img src="http://pets.neopets.com/cp/ngkzv7nn/1/4.png" id="sideimage" style="border-radius: 100px;"><br><br>
 <a href="#t1" class="naviCA" style="border-radius: 15px;">Accueil | Home</a>
-<a href="#t2" class="naviC1" style="border-radius: 15px;">RE:CreAtion</a>
-<a href="#t3" class="naviC2" style="border-radius: 15px;">Page setup</a>
-<a href="#t4" class="naviC3" style="border-radius: 15px;">Autre | Other</a>
-<a href="#t5" class="naviC4" style="border-radius: 15px;">Histoire | Story</a>
-<a href="#t6" class="naviC5" style="border-radius: 15px;">Adoptables</a>
+<a href="#t2" class="naviC1" style="border-radius: 15px;">Présentation | Info</a>
+<a href="#t3" class="naviC2" style="border-radius: 15px;">Famille | Family</a>
+<a href="#t4" class="naviC3" style="border-radius: 15px;">Histoire | Story</a>
+<a href="#t5" class="naviC4" style="border-radius: 15px;">Adoptables & credits</a>
+<a href="#t6" class="naviC5" style="border-radius: 15px;">RE:CreAtion</a>
 base from <a href="/~Orgrimmar">OrgCSS</a> by l3lo0!<br>
 background from <a href="/~ventria">Mariposa</a>
 </div>
@@ -235,13 +273,13 @@ With time this page should grow into become more interesting... Thank you for lo
         <li>✔ Invent some original coloring, markings and fur bits</li>
         <li>▢ Accessorize ?</li>
         <li>▢ Create reference picture</li>
-      </ul></div><hr>
+      </ul></div><hr class="style-one">
 
 <span style="float: left; margin-right: 10px; font-size: 20px;">❷</span>
   <div><ul class="tracking" style="display: inline-block;">
         <li>▢ Create the relation with my other pets (on this account + on my sides ?)</li>
         <li>▢ Make nice pictures of them together!</li>
-      </ul></div><hr>
+      </ul></div><hr class="style-one">
 
 <span style="float: left; margin-right: 10px; font-size: 20px;">❸</span>
       <div><ul class="tracking" style="display: inline-block;">
@@ -249,7 +287,7 @@ With time this page should grow into become more interesting... Thank you for lo
         <li>▢ Create synopsis for one comic strip</li>
         <li>▢ Make the comic (don't know how yet)</li>
         <li>▢ Repeat previews steps =D</li>
-      </ul></div><hr>
+      </ul></div><hr class="style-one">
 
 <span style="float: left; margin-right: 10px; font-size: 20px;">❹</span>
       <div><ul class="tracking" style="display: inline-block;">
@@ -258,7 +296,7 @@ With time this page should grow into become more interesting... Thank you for lo
         <li>▢ Add 1 or 2 more complicated colors</li>
         <li>▢ Make trades for customs</li>
         <li>▢ Keep adding colors (maybe)</li>
-      </ul></div><hr>
+      </ul></div><hr class="style-one">
 
 <span style="float: left; margin-right: 10px; font-size: 20px;">❺</span>
       <div><ul class="tracking" style="display: inline-block;">
@@ -269,61 +307,6 @@ With time this page should grow into become more interesting... Thank you for lo
 
 </div>
 
-<br><br><br>
-<h3 style="border-radius: 0 20px 20px 0;">Qui est cette Noëlla ?</h3>
-<h4>Who's this Noëlla?</h4>
-
-<p><b>Name:</b> Noëlla<br>
-&nbsp;-&nbsp;<b>gender:</b> (undecided yet so let's say female for now like on her lookup)<br>
-&nbsp;-&nbsp;<b>pronouns:</b> she/her (see just above)<br>
-<b>Species:</b> Xweetok<br>
-&nbsp;-&nbsp;<b>height:</b> 22cm tall, 44cm long plus a 25cm tail<br>
-&nbsp;-&nbsp;<b>weight:</b> 1,7kg (average)<br>
-<b>Age:</b> 12 years (born on the 15th of may, Y10)<br>
-<b>Coloring:</b> Cloud PB on Neopets<br>
-&nbsp;-&nbsp;<b>Eye color:</b> purple & black<br>
-&nbsp;-&nbsp;<b>Hair color:</b> brown/black/blue/purple/white<br>
-&nbsp;-&nbsp;<b>Skin color:</b> black/blue(inside the ears)<br>
-&nbsp;-&nbsp;<b>Markings:</b> clear white separation at the bottom of the paws and end of tail, dark tip of the ears... (check ref pic TO COME)<br>
-<b>Health/Hygiene:</b> extensive fur maintenance is required<br>
-&nbsp;-&nbsp;<b>Speed:</b> above average<br>
-&nbsp;-&nbsp;<b>Vision:</b> average in daylight, particularely high in the dark<br>
-&nbsp;-&nbsp;<b>Hearing:</b> average<br>
-&nbsp;-&nbsp;<b>Smell:</b> below average<br>
-<b>Other specifics:</b> ecxellent tree climbing abilities!
-</p>
-
-<table>
-  <tr>
-    <td>Loves</td>
-    <td>Likes</td>
-    <td>Tolerates</td>
-    <td>Fears</td>
-    <td>Hates</td>
-  </tr>
-  <tr>
-    <td> <img src="http://images.neopets.com/items/tro_cloudberry.gif" alt="Cloudberry"> </td>
-    <td> <img src="http://images.neopets.com/items/boo_aisha_thiefbook.gif" alt="Books"> </td>
-    <td> <img src="http://images.neopets.com/items/hwpp_tombstone_alarmclock.gif" alt="Talking Alarm Clock"> </td>
-    <td> <img src="http://images.neopets.com/items/gif_balthazar_loomingshadow.gif" alt="creepy shadow"> </td>
-    <td> <img src="http://images.neopets.com/items/foo_lemon.gif" alt="Lemon"> </td>
-  </tr>
-  <tr>
-    <td>her partner Noulfe and their baby</td>
-    <td>exploring lands & learning</td>
-    <td>loud creatures...</td>
-    <td>gigantic flying creatures</td>
-    <td>sour foods</td>
-  </tr>
-</table>
-
-<p>
-  Noëlla prefers to take some time to observe quietly any new creature while being hidden before deciding if she'll approach or not.
-  She is really curious, but also quite cautious and fearful so she might choose to run away before being seen.<br>
-  Once she decides to get close though, she'll love you forever no matter where you are or how often you meet.<br>
-  She's also very cuddly towards her particularly close friends and family.
-</p>
-
 </div>
 </div>
 
@@ -332,174 +315,72 @@ With time this page should grow into become more interesting... Thank you for lo
 
 
 <div id="t2" class="c1">
-<h2>Avancée du challenge | Challenge Tracking</h2>
+<h2>Présentation | Info</h2>
 <div class="content">
 
-<i><p>Cette partie est pour m'aider à repérer où j'en suis pendant les soixante jours de ce challenge !<br>
-Toutes les infos sont sur la page de <a href="/~2020">RE:CreAtion</a></p>
+  <p><b>Name:</b> Noëlla<br>
+  &nbsp;-&nbsp;<b>gender:</b> (undecided yet so let's say female for now like on her lookup)<br>
+  &nbsp;-&nbsp;<b>pronouns:</b> she/her (see just above)<br>
+  <b>Species:</b> Xweetok<br>
+  &nbsp;-&nbsp;<b>height:</b> 22cm tall, 44cm long plus a 25cm tail<br>
+  &nbsp;-&nbsp;<b>weight:</b> 1,7kg (average)<br>
+  <b>Age:</b> 12 years (born on the 15th of may, Y10)<br>
+  <b>Coloring:</b> Cloud PB on Neopets<br>
+  &nbsp;-&nbsp;<b>Eye color:</b> purple & black<br>
+  &nbsp;-&nbsp;<b>Hair color:</b> brown/black/blue/purple/white<br>
+  &nbsp;-&nbsp;<b>Skin color:</b> black/blue(inside the ears)<br>
+  &nbsp;-&nbsp;<b>Markings:</b> clear white separation at the bottom of the paws and end of tail, dark tip of the ears... (check ref pic TO COME)<br>
+  <b>Health/Hygiene:</b> extensive fur maintenance is required<br>
+  &nbsp;-&nbsp;<b>Speed:</b> above average<br>
+  &nbsp;-&nbsp;<b>Vision:</b> average in daylight, particularely high in the dark<br>
+  &nbsp;-&nbsp;<b>Hearing:</b> average<br>
+  &nbsp;-&nbsp;<b>Smell:</b> below average<br>
+  <b>Other specifics:</b> ecxellent tree climbing abilities!
+  </p>
 
-<p>This part will help me keep track of where I am during this sixty days challenge!<br>
-For more info visit the <a href="/~2020">RE:CreAtion</a> page</p></i>
+  <br><br><br>
+  <h3 style="border-radius: 0 20px 20px 0;">Qui est cette Noëlla ?</h3>
+  <h4>Who's this Noëlla?</h4>
 
+  <a href="/~sketterket" style="float:left;"> <img src="https://i.imgur.com/RptJZIP.png" alt="" width=180px> </a>
+  <p>Adjectif1 --------o- Adjectif2<br>Adjectif1 --------o- Adjectif2<br>Adjectif1 --------o- Adjectif2<br>
+    Adjectif1 --------o- Adjectif2<br>Adjectif1 --------o- Adjectif2<br>Adjectif1 --------o- Adjectif2<br>
 
-<table>
-  <tr>
-    <td style="vertical-align:top;">Challenge #1 : GROUND FLOOR</td>
-    <td>
-      <ul class="tracking">
-        <li>[x] Page setup (started)</li>
-        <li>✔ Planning map (done!)</li>
-        <li>✔ Introduction (done!)</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2"><p class="box2" style="font: 10pt 'Tahoma';">Character baselines/guidelines:
-      <br><b>➜</b> Noëlla lives in the woods (she's a xweetok after all). The haunted woods were
-      the only woods available as a place to live when I created her (many years ago!) and since
-      then I have been willing to create a mashup of clouds and spooky trees. <i>Purple and blue are
-      two of my favorite colors and when combined they are like eye candy to me.</i>
-      <br><b>➜</b> Noëlla eats mainly acorns, nuts and berries, plus occasionelly mushrooms and other plants.
-      She is a peaceful creature that does not harm others for no reason. This is probably the reason why
-      usuls and xweetoks get along so well, just as with cybunnies, ixis, and many other foresty pets
-      (but not so well with lupes, kougras or any predatory species).
-      <i>I am basing this on the default xweetok petpage information and pictures.</i>
-      <br><b>➜</b> Noëlla likes to travel and explore new lands because she is very curious and loves to learn new things
-      (while still advising caution towards the unknown). She uses a magic portal -<i>TO DO: figure out
-      how it works and how she found it</i>- to quickly go to amazing places far away <i>(why not Purled's island?)</i> and remain
-      able to get back home as fast as may be needed. <i>Therefore access to magic is required in this story, but I am not
-      convinced about neopet's faerie magic and would prefer either a witchy encounter, or even
-      maybe an older ancient kind of magic.</i>
-      <br><b>➜</b> I am not sure about the clothing situation, because I like my pets being
-      animals and clothes are probably just limiting their movements and capacities in nature-like
-      environnements such as a forest (which they live in). I might just get some more for the fun of playing
-      with neopets customization, and not represent these in my characters pictures and stories.
-      However, I do like little accessories such as jewelry and face props even if they might
-      not be really practical (not wigs though, my pet are not humans).
-    </p><br></td>
-  </tr>
-  <tr>
-    <td style="vertical-align:top;">Challenge #2 : BASE BIOGRAPHY</td>
-    <td>
-      <ul class="tracking">
-        <li>✔ Basic Stats (done!)</li>
-        <li>✔ Personality (done!)</li>
-        <li>✔ Key Interests (done!)</li>
-      </ul>
+  </p><div style="clear: both;"></div>
 
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2"><p class="box2" style="font: 10pt 'Tahoma';">
-      I'm not sure if what I have is enough, but I could still add more things as I write stories...<br>
-      I also need to add pictures fo the color and markings I  have in mind (sketches done for now).
-    </p><br></td>
-  </tr>
-  <tr>
-    <td style="vertical-align:top;">Challenge #3 : WORLD BUILDING</td>
-    <td>
-      <ul class="tracking">
-        <li>✔ Environnement</li>
-        <li>✔ Ruling powers</li>
-        <li>✔ Cultural norms</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2"><p class="box2" style="font: 10pt 'Tahoma';">My base world is Neopia, maybe in an old
-      time when most of the land is still covered by forests? With an abondance of fruits, berries and nuts.
-      <br><b>➜</b>"the Xweetok Forest Time": They were so many of them! And all thriving. (NOELLA DOES NOT REMEMBER THIS TIME)<br>
-      Xweetoks are social creatures : thousands of xweetoks, all living in harmony with nearly unlimited resources
-      (food, water, shelters and lively compagnonship, which they really enjoy). <br>
-      Older xweetoks were very respected for their wisdom, and all the advices they gave while "guiding" the very large flocks.
-      This enormous community was formed by smaller family clans established a few trees away from each other.
-      Everyone was welcome and also encouraged to go explore outside their own nest, knowing that they would always have a place
-      to return to whenever they would feel the need to. <br>
-      The family bonds are very strong between xweetoks. They last all their life.<br>
-      <br><b>➜</b>"Nowadays": Now eveything is different and there are deserts, swamps, and many cities crowded with a lot of people
-      sometinmes waging wars against one another!<br>
-      Today the xweetoks are scaterred all over Neopia, with some even living in the cities, but since they are
-      small preyed on and rather timid creatures, most of them have retired out of the plains and deaper into either
-      the lower levels of mountains or the few forests left.<br>
-      Since there isn't one very large group of xwetoks anymore, but instead a multitude of tiny family cells everywhere,
-      it has become more difficult and dangerous for xweetoks to survive. They don't have access to the ancestral knowledge
-      of their elders like they used to and each one is basicly just responsable for themselves, unless they have created a family.
-      Being extremely found of company, many have found companions that aren't of the same species. This offers a better
-      protection against the numerous predators out there.<br>
-      <br><b>➜</b>"Our story": Noëlla found or established her home in the haunted woods. She thought that since theese were mostly inhabited
-      by dead (harmless?) things (and therefore scary for a lot people that wouldnot get into those woods),
-      she would probably be quite safe (always keeping a vigilant eye on those scary werewolves, though).<br>
-      There is not so much food in the haunted woods becaus e of the conditions the trees are in,
-      so Noëlla spends a lot of time exploring beyond them and searching for new fruit trees and bushes.
-      This is slowly leading her further and further away from their home tree where she lives with her partner Noulfe and their
-      kit/cub (no name chosen yet). They are installed with a very close usul friend (Plume) who just recently gave birth to her
-      baby (Luette), and there is a bunny (Maënna) living with them (or on/in the grounds below them more precisely).
-      <i>-plus also a future cloud jubjub, when I am done playing with the lab-</i><br>
-      They get along perfectly within this little familial cell.
-      <i>Xweetoks are after all some kind of mix between squirrels (like usuls) cats/foxes (that tail!)
-      and rabbits (cybunnies).</i><br>
-      While Noëlla is away looking for food, Maënna and Plume are trying to revive the woods and give back more life
-      (starting with some more leaves!) to the bushes and trees around where they live. They use potions, spells and all the magic
-      they can find.<br>
-      -thoses trees are already talking after all-
-    </p><br></td>
-  </tr>
-  <tr>
-    <td style="vertical-align:top;">Challenge #4 : ORIGIN STORY</td>
-    <td>
-      <ul class="tracking">
-        <li>✔ First memories (done)</li>
-        <li>✔ Catalyst event (done)</li>
-        <li>[x] Belief system (started)</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+  <br><br><br>
+  <h3 style="border-radius: 0 20px 20px 0;">Fonctionnement</h3>
+  <h4>Key interests</h4>
+  <table>
+    <tr>
+      <td>Loves</td>
+      <td>Likes</td>
+      <td>Tolerates</td>
+      <td>Fears</td>
+      <td>Hates</td>
+    </tr>
+    <tr>
+      <td> <img src="http://images.neopets.com/items/plu_cloud_xweetok.gif" alt="Cloud Xweetok Plushie"> </td>
+      <td> <img src="http://images.neopets.com/items/boo_aisha_thiefbook.gif" alt="Books"> </td>
+      <td> <img src="http://images.neopets.com/items/hwpp_tombstone_alarmclock.gif" alt="Talking Alarm Clock"> </td>
+      <td> <img src="http://images.neopets.com/items/gif_balthazar_loomingshadow.gif" alt="creepy shadow"> </td>
+      <td> <img src="http://images.neopets.com/items/foo_lemon.gif" alt="Lemon"> </td>
+    </tr>
+    <tr>
+      <td>plushies and petpets</td>
+      <td>exploring lands & learning</td>
+      <td>loud creatures...</td>
+      <td>gigantic flying creatures</td>
+      <td>sour foods</td>
+    </tr>
+  </table>
 
-</div>
-</div>
+  <img src="http://images.neopets.com/template_images/xweetok_face_wink.gif" alt="Winking cloud xweetok" style="float: right;">
 
-
-<div class="spacer"></div>
-
-
-<div id="t3" class="c2">
-<h2>Page setup and text formating</h2>
-<div class="content">
-text <b>bold</b> <i>italics</i> <a href="#">links</a>
-<p class="box1" style="border-radius:7px;">Paragraph in box1 style. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<br><br><br>
-<h3 style="border-radius: 0 20px 20px 0;">Header3 will go here</h3>
-<h4>header 4 -translation-</h4>
-
-<p class="box2">Paragrahp in box2 style. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<div style="margin: auto; width: 400px; padding: 10px; background: #ffffff; border: 1px dotted #dadada;">
-  <img src="http://pets.neopets.com/cpn/Mariquita/1/2.png" style="float: left; margin-right: 10px;">
-  <b>Name:</b> Mariquita <br><b>Nickname:</b> Mari <br><b>Gender:</b> Female <br><b>Species:</b> Pteri <br><b>Brush:</b> Yellow <br><br> This other box is from <a href="/~Mariquita">Mariquita</a>
-  <div style="clear: both;"></div>
-</div>
-
-<p>Normal paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<br><br><br>
-<h3 style="border-radius: 0 20px 20px 0;">Header3 will go here</h3>
-<h4>header 4 -translation-</h4>
-
-<img src="http://images.neopets.com/template_images/xweetok_face_wink.gif" alt="Winking cloud xweetok" style="float: right;">
-
-<p class="speechBubble" style="margin-right: 140px;border-radius: 20px; ">Very big bubble of speech here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<p class="speechBubble" style="margin-right: 250px;border-radius: 20px; ">Speech bubble text here.</p>
-</div>
-</div>
-
-
-<div class="spacer"></div>
-
-<div id="t4" class="c3">
-<h2>Autre | Other</h2>
-<div class="content">
-
+  <p class="speechBubble" style="margin-right: 140px;border-radius: 20px; ">
+    I really enjoy theese berries and sweets. But I also like many other things, of course !<br>
+  </p><br><br>
+<div style="text-align:center;">
   <img src="http://images.neopets.com/items/med_berry_1.gif" alt="">
   <img src="http://images.neopets.com/items/food_novapop_blueberry.gif" alt="">
   <img src="http://images.neopets.com/items/TBDNEWTROPIFRUIT20151.gif" alt="">
@@ -520,47 +401,162 @@ text <b>bold</b> <i>italics</i> <a href="#">links</a>
   <img src="http://images.neopets.com/items/tro_tetraberry.gif" alt="">
   <img src="http://images.neopets.com/items/bak_moehogcloud_cupcake.gif" alt="">
   <img src="http://images.neopets.com/items/foo_ger_skullberry.gif" alt="">
+</div>
+
+  <p>Tolerates (on s'habitue à force de vivre dans la forêt hantée) : <br>
+    <img src="http://images.neopets.com/items/boo_zombiehandbook.gif" alt="">
+    <img src="http://images.neopets.com/items/hwp_ominous_stone.gif" alt="">
+    <img src="http://images.neopets.com/items/plu_tombstone.gif" alt="">
+    <img src="http://images.neopets.com/items/gar_tombstone.gif" alt="">
+    <img src="http://images.neopets.com/items/boo_zombiegravebook.gif" alt="">
+  </p>
+  <p>
+    Noëlla prefers to take some time to observe quietly any new creature while being hidden before deciding if she'll approach or not.
+    She is really curious, but also quite cautious and fearful so she might choose to run away before being seen.<br>
+    Once she decides to get close though, she'll love you forever no matter where you are or how often you meet.<br>
+    She's also very cuddly towards her particularly close friends and family.
+  </p>
+  <p>
+    REFERENCE PICTURE SHOULD GO HERE
+  </p>
+
+  <br><br><br>
+  <h3 style="border-radius: 0 20px 20px 0;">Cutomisation</h3>
+  <h4>Customization</h4>
+
+  <p>Image plus list of things I need/want.</p>
+  <img src="https://items.jellyneo.net/assets/imgs/items/60732.gif" alt="Premium Collectible: Silver Swirl Contacts">
+  <img src="https://items.jellyneo.net/assets/imgs/items/51385.gif" alt="Silver and Blue Facepaint">
+
+  <br><br><br>
+  <h3 style="border-radius: 0 20px 20px 0;">Buts à atteindre</h3>
+  <h4>Goals to achieve</h4>
+
+  <img src="https://i.imgur.com/Y1EarcRt.jpg"  style="float:right;" alt="">
+  <p>Painting chain: Elderly - Desert - Cloud</p>
+  <p> <img src="http://images.neopets.com/items/pb_elderly.gif" alt=""> <img src="http://images.neopets.com/items/desertpaintbrush.gif" alt=""> <img src="http://images.neopets.com/items/cloudpntbrush.gif" alt=""> </p>
+  <p> <img src="http://images.neopets.com/items/clo_xweetok_elderly_fem_jewels.gif" alt=""> <img src="http://images.neopets.com/items/clo_desert_xweetok_makeup.gif" alt=""> </p>
+  <div style="clear: both;"></div>
+
+  <p>Fishing, books, jobs, HSD, etc. (table with start, current and goal)</p>
+
+  <br><br><br>
+  <h3 style="border-radius: 0 20px 20px 0;">Buts impossibles</h3>
+  <h4>Unachievable goals</h4>
+
+  <p>Things that I cannot get...<br>
+  <img src="http://images.neopets.com/items/minimonster.gif" alt=""> </p>
+
 
 </div>
 </div>
+
 
 <div class="spacer"></div>
 
-<div id="t5" class="c4">
+
+<div id="t3" class="c2">
+<h2>Famille | Family</h2>
+<div class="content">
+  <p>Hover on pictures for info</p>
+
+  <br><br><br>
+  <h3 style="border-radius: 0 20px 20px 0;">Famille de xweetoks</h3>
+  <h4>Chosen xweetok family</h4>
+
+<div style="text-align:center;">
+  <div class="pet" style="border-radius: 300px; position: relative;">
+    <img src="https://i.imgur.com/7IkSDc1t.jpg">
+    <span style="position: absolute; border-radius: 150px;">
+      NOULFE<br>
+      She's Noëlla's life partner,  and has been for a few years now.
+    </span>
+  </div>
+  <div class="pet" style="border-radius: 300px; position: relative;">
+    <img src="https://i.imgur.com/dUuggFAt.jpg">
+    <span style="position: absolute; border-radius: 150px;">
+      TALUK*<br>
+      Their kid is not weaned anymore. She's gone on vacation at the moment.
+    </span>
+  </div>
+  <div class="pet" style="border-radius: 300px; position: relative;">
+    <img src="https://i.imgur.com/VJItXgNt.jpg">
+    <span style="position: absolute; border-radius: 150px;">
+      XXX*<br>
+      There is at least one distant relative that Noëlla hasn't met yet.
+    </span>
+  </div>
+</div>
+
+  <br><br><br>
+  <h3 style="border-radius: 0 20px 20px 0;">Cercle familial étendu</h3>
+  <h4>Extended chosen family</h4>
+
+  <div style="text-align:center;">
+    <div class="pet" style="border-radius: 300px; position: relative;">
+      <img src="https://i.imgur.com/KtVKifgt.jpg">
+      <span style="position: absolute; border-radius: 150px;">
+        MAENNA<br>
+        She's a magic knowing Cybunny, that hope to be of assistance with her potions.
+      </span>
+    </div>
+    <div class="pet" style="border-radius: 300px; position: relative;">
+      <img src="https://i.imgur.com/E320duxt.jpg">
+      <span style="position: absolute; border-radius: 150px;">
+        PLUME<br>
+        This special usul has met Noëlla recently and came to help her restore the forest.
+      </span>
+    </div>
+    <div class="pet" style="border-radius: 300px; position: relative;">
+      <img src="https://i.imgur.com/kkJPUqot.jpg">
+      <span style="position: absolute; border-radius: 150px;">
+        NAME<br>
+        She's Plume's very cute newborn baby. We don't know much more about her for now.
+      </span>
+    </div>
+    <div class="pet" style="border-radius: 300px; position: relative;">
+      <img src="https://i.imgur.com/FTjYz8nt.jpg">
+      <span style="position: absolute; border-radius: 150px;">
+        ZOUEN<br>
+        He will be the latest addition to the gang, but hasn't appeared in the story yet.
+      </span>
+    </div>
+  </div>
+
+  <br><br><br>
+  <h3 style="border-radius: 0 20px 20px 0;">Rencontres marquantes</h3>
+  <h4>Notable encounters</h4>
+
+  <img src="http://images.neopets.com/items/plu_meerca_striped.gif" alt="">
+  <img src="http://images.neopets.com/items/toy_ixi_plushfaerie.gif" alt="">
+  <img src="http://images.neopets.com/items/plush_baby_cybunny.gif" alt="">
+  <img src="http://images.neopets.com/items/plu_fony18_cybunny_choc.gif" alt="">
+  <img src="http://images.neopets.com/items/plu_lutari_valentine.gif" alt="">
+  <img src="http://images.neopets.com/items/plu_baby_kacheek.gif" alt="">
+  <img src="http://images.neopets.com/items/toy_beek_plushie.gif" alt="">
+  <img src="http://images.neopets.com/items/plu_blue_usul_sus.gif" alt="">
+  <img src="http://images.neopets.com/items/plu_poogle_borovtime.gif" alt="">
+  <img src="http://images.neopets.com/items/plu_xweetok_borovantime.gif" alt="">
+  <img src="http://images.neopets.com/items/plu_brightvalebook_shopkeeper.gif" alt="">
+  <img src="http://images.neopets.com/items/plu_bruce_twirlyfruit.gif" alt="">
+
+  <br><br><br>
+  <h3 style="border-radius: 0 20px 20px 0;">Voyageurs accompagnants</h3>
+  <h4>Traveling companions</h4>
+
+</div>
+</div>
+
+
+<div class="spacer"></div>
+
+<div id="t4" class="c3">
 <h2>Histoire | Story</h2>
 <div class="content">
 
-   <br><br><br>
-   <h3 style="border-radius: 0 20px 20px 0;">Début de l'histoire</h3>
-   <h4>ORIGIN STORY</h4>
+  text <b>bold</b> <i>italics</i> <a href="#">links</a>
 
-   <p><b>EARLY MEMORIES</b><br>
-      Unlike her partner Noulfe, Noëlla doesn't have much nice memories of growing up in a loving family.
-      She does however remember having to fight to survive in her early days. She had always been rather small for a xweetok,
-      even as a baby and that is why she had been able to hide well enough to stay alive when a rabbid gryffon attacked
-      and ate her entire family clan. After staying hidden, trembling and absolutely terrified for her life, she fled
-      the place and began fighting for her life, and searching for food wherever she could find.<br>
-      As she started to approach cities, she did find it easier to get scraps from the garbage there, and also hidden
-      places to get some kind of shelter form the rain and cold, but she was constantly fearful and wouldn't rest for long anywhere.
-      Most of her memories from that awful time is blurred in her mind now, but she remembers perfectly how she used to feel...<br>
-      One day, and she won't ever forget it, a wonderful person lent her a helpful hand and rescued her by getting her off the streets as well as
-      back to proper health. After that she became stronger, a bit more confident and was able to return to a normal xweetok life,
-      by going back in the wild.<br>
-      She would then soon decide to live in the haunted woods, where our main story is about to begin.
-   </p>
-   <p><b>CATALYST EVENT</b><br>
-      The main event that changed her, and started this whole story, is Noëlla's dicovery of a strange swirly glowing magic portal.
-      This magical thing is used to travel instantly to many places all over the world, and maybe even beyond, but Noëlla hasn't
-      discovered that yet.<br>
-      She did however learnt how to use that portal and it has brought a lot more happiness to her.<br>
-      Before she found it, she was mainly hiding deep in the woods, but since then, she has been able to visit so many amazing
-      places, and has met countless new friends, including everyone she's currently living with!
-   </p>
-   <p><b>BELIEF SYSTEM</b></br>
-      Having her world made a little less scary and unwelcoming by the help of a stranger, Noëlla strongly believes in
-      helping others, like she's been helped and rescued. Being a nice "person" is very important to her.
-
-   </p>
+  <p class="speechBubble" style="margin-right: 250px;border-radius: 20px; ">Speech bubble text here.</p>
 
   <br><br><br>
   <h3 style="border-radius: 0 20px 20px 0;">Bandes dessinées</h3>
@@ -608,24 +604,11 @@ text <b>bold</b> <i>italics</i> <a href="#">links</a>
 </div>
 </div>
 
-
 <div class="spacer"></div>
 
-
-<div id="t6" class="c5">
-<h2>Adoptables</h2>
+<div id="t5" class="c4">
+<h2>Adoptables & credits</h2>
 <div class="content">
-  <br><br><br>
-  <h3 style="border-radius: 0 20px 20px 0;">Mes adoptés</h3>
-  <h4>Adopted by me</h4>
-
-  <div class="box1">
-    <p>
-      <img src="" alt="">
-
-    </p>
-  </div>
-
   <br><br><br>
   <h3 style="border-radius: 0 20px 20px 0;">A adopter pour tous</h3>
   <h4>Adoptables for you</h4>
@@ -633,9 +616,171 @@ text <b>bold</b> <i>italics</i> <a href="#">links</a>
   <div class="box1">
     <p>
       <img src="" alt="">
-
     </p>
   </div>
+
+  <br><br><br>
+  <h3 style="border-radius: 0 20px 20px 0;">Mes adoptés</h3>
+  <h4>Adopted by me</h4>
+
+  <div class="box1">
+    <p>
+      <a href="/~sketterket"><img src="https://i.imgur.com/srVvlLM.png" width="150px" alt=""></a>
+      <a href="/~_Safiry_"><img src="https://i.imgur.com/CRgFl99.png" alt=""></a>
+      <a href="/~Sweetous_x#Adopts"><img src="https://i.imgur.com/hnIPdIY.png" alt=""></a>
+      <a href="/~Airamingo"><img src="http://i.imgur.com/Tkc9tKb.png" border="0" width="150px"></a>
+      <a href="/~zwappy"><img src="https://i.imgur.com/WbpsEDj.png" alt=""></a>
+      <a href="/~Ataiishi"><img src="https://i.imgur.com/Gg5sBkT.png" alt=""></a>
+      <a href="/~?"><img src="https://i.imgur.com/oCcRK90.jpg" alt=""></a>
+      <a href="/~nevony262"><img src="https://i.imgur.com/puCIk19.png" alt=""></a>
+    </p>
+  </div>
+
+  <br><br><br>
+  <h3 style="border-radius: 0 20px 20px 0;">Aides et ressouces</h3>
+  <h4>Credits for all the help</h4>
+  <p>CSS codes, help and inspirations from many places:
+    <ul>
+      <li>/~Cecira#codes for the hover over pet images and the footnotes</li>
+      <li>CSS help and guide, etc.</li>
+    </ul>
+  </p>
+  <div style="margin: auto; width: 400px; padding: 10px; background: #ffffff; border: 1px dotted #dadada;">
+    <img src="http://pets.neopets.com/cpn/Mariquita/1/2.png" style="float: left; margin-right: 10px;">
+    <b>Name:</b> Mariquita <br><b>Nickname:</b> Mari <br><b>Gender:</b> Female <br><b>Species:</b> Pteri <br><b>Brush:</b> Yellow <br><br> This other box is from <a href="/~Mariquita">Alula</a>
+    <div style="clear: both;"></div>
+  </div>
+
+</div>
+</div>
+
+
+<div class="spacer"></div>
+
+
+<div id="t6" class="c5">
+<h2>Avancée du challenge | Challenge Tracking</h2>
+<div class="content">
+  <i><p>Cette partie est pour m'aider à repérer où j'en suis pendant les soixante jours de ce challenge !<br>
+  Toutes les infos sont sur la page de <a href="/~2020">RE:CreAtion</a></p>
+
+  <p>This part will help me keep track of where I am during this sixty days challenge!<br>
+  For more info visit the <a href="/~2020">RE:CreAtion</a> page</p></i>
+
+
+  <table>
+    <tr>
+      <td style="vertical-align:top;">Challenge #1 : GROUND FLOOR</td>
+      <td>
+        <ul class="tracking">
+          <li>[x] Page setup (started)</li>
+          <li>✔ Planning map (done!)</li>
+          <li>✔ Introduction (done!)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><p class="box2" style="font: 10pt 'Tahoma';">Character baselines/guidelines:
+        <br><b>➜</b> Noëlla lives in the woods (she's a xweetok after all). The haunted woods were
+        the only woods available as a place to live when I created her (many years ago!) and since
+        then I have been willing to create a mashup of clouds and spooky trees. <i>Purple and blue are
+        two of my favorite colors and when combined they are like eye candy to me.</i>
+        <br><b>➜</b> Noëlla eats mainly acorns, nuts and berries, plus occasionelly mushrooms and other plants.
+        She is a peaceful creature that does not harm others for no reason. This is probably the reason why
+        usuls and xweetoks get along so well, just as with cybunnies, ixis, and many other foresty pets
+        (but not so well with lupes, kougras or any predatory species).
+        <i>I am basing this on the default xweetok petpage information and pictures.</i>
+        <br><b>➜</b> Noëlla likes to travel and explore new lands because she is very curious and loves to learn new things
+        (while still advising caution towards the unknown). She uses a magic portal -<i>TO DO: figure out
+        how it works and how she found it</i>- to quickly go to amazing places far away <i>(why not Purled's island?)</i> and remain
+        able to get back home as fast as may be needed. <i>Therefore access to magic is required in this story, but I am not
+        convinced about neopet's faerie magic and would prefer either a witchy encounter, or even
+        maybe an older ancient kind of magic.</i>
+        <br><b>➜</b> I am not sure about the clothing situation, because I like my pets being
+        animals and clothes are probably just limiting their movements and capacities in nature-like
+        environnements such as a forest (which they live in). I might just get some more for the fun of playing
+        with neopets customization, and not represent these in my characters pictures and stories.
+        However, I do like little accessories such as jewelry and face props even if they might
+        not be really practical (not wigs though, my pet are not humans).
+      </p><br></td>
+    </tr>
+    <tr>
+      <td style="vertical-align:top;">Challenge #2 : BASE BIOGRAPHY</td>
+      <td>
+        <ul class="tracking">
+          <li>✔ Basic Stats (done!)</li>
+          <li>✔ Personality (done!)</li>
+          <li>✔ Key Interests (done!)</li>
+        </ul>
+
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><p class="box2" style="font: 10pt 'Tahoma';">
+        I'm not sure if what I have is enough, but I could still add more things as I write stories...<br>
+        I also need to add pictures fo the color and markings I  have in mind (sketches done for now).
+      </p><br></td>
+    </tr>
+    <tr>
+      <td style="vertical-align:top;">Challenge #3 : WORLD BUILDING</td>
+      <td>
+        <ul class="tracking">
+          <li>✔ Environnement</li>
+          <li>✔ Ruling powers</li>
+          <li>✔ Cultural norms</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><p class="box2" style="font: 10pt 'Tahoma';">My base world is Neopia, maybe in an old
+        time when most of the land is still covered by forests? With an abondance of fruits, berries and nuts.
+        <br><b>➜</b>"the Xweetok Forest Time": They were so many of them! And all thriving. (NOELLA DOES NOT REMEMBER THIS TIME)<br>
+        Xweetoks are social creatures : thousands of xweetoks, all living in harmony with nearly unlimited resources
+        (food, water, shelters and lively compagnonship, which they really enjoy). <br>
+        Older xweetoks were very respected for their wisdom, and all the advices they gave while "guiding" the very large flocks.
+        This enormous community was formed by smaller family clans established a few trees away from each other.
+        Everyone was welcome and also encouraged to go explore outside their own nest, knowing that they would always have a place
+        to return to whenever they would feel the need to. <br>
+        The family bonds are very strong between xweetoks. They last all their life.<br>
+        <br><b>➜</b>"Nowadays": Now eveything is different and there are deserts, swamps, and many cities crowded with a lot of people
+        sometinmes waging wars against one another!<br>
+        Today the xweetoks are scaterred all over Neopia, with some even living in the cities, but since they are
+        small preyed on and rather timid creatures, most of them have retired out of the plains and deaper into either
+        the lower levels of mountains or the few forests left.<br>
+        Since there isn't one very large group of xwetoks anymore, but instead a multitude of tiny family cells everywhere,
+        it has become more difficult and dangerous for xweetoks to survive. They don't have access to the ancestral knowledge
+        of their elders like they used to and each one is basicly just responsable for themselves, unless they have created a family.
+        Being extremely found of company, many have found companions that aren't of the same species. This offers a better
+        protection against the numerous predators out there.<br>
+        <br><b>➜</b>"Our story": Noëlla found or established her home in the haunted woods. She thought that since theese were mostly inhabited
+        by dead (harmless?) things (and therefore scary for a lot people that wouldnot get into those woods),
+        she would probably be quite safe (always keeping a vigilant eye on those scary werewolves, though).<br>
+        There is not so much food in the haunted woods becaus e of the conditions the trees are in,
+        so Noëlla spends a lot of time exploring beyond them and searching for new fruit trees and bushes.
+        This is slowly leading her further and further away from their home tree where she lives with her partner Noulfe and their
+        kit/cub (no name chosen yet). They are installed with a very close usul friend (Plume) who just recently gave birth to her
+        baby (Luette), and there is a bunny (Maënna) living with them (or on/in the grounds below them more precisely).
+        <i>-plus also a future cloud jubjub, when I am done playing with the lab-</i><br>
+        They get along perfectly within this little familial cell.
+        <i>Xweetoks are after all some kind of mix between squirrels (like usuls) cats/foxes (that tail!)
+        and rabbits (cybunnies).</i><br>
+        While Noëlla is away looking for food, Maënna and Plume are trying to revive the woods and give back more life
+        (starting with some more leaves!) to the bushes and trees around where they live. They use potions, spells and all the magic
+        they can find.<br>
+        -thoses trees are already talking after all-
+      </p><br></td>
+    </tr>
+    <tr>
+      <td style="vertical-align:top;">Challenge #4 : ORIGIN STORY</td>
+      <td>
+        <ul class="tracking">
+          <li>[ ] First memories</li>
+          <li>[ ] Catalyst event</li>
+          <li>[ ] Belief system</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
 
 </div>
 </div>
